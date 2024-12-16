@@ -3,139 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RootsCoin - MemeCoin of the Future</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>RootsCoin - The MemeCoin Revolution</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
-            color: #e5e5e5;
+            font-family: 'Arial', sans-serif;
+            background: #1e1e1e;
+            color: #ffffff;
         }
 
         header {
-            background: #1c1c1c;
+            background: #333;
             padding: 20px;
             text-align: center;
-            border-bottom: 2px solid #4caf50;
         }
 
         header img {
-            width: 120px;
-            margin-top: 10px;
+            width: 150px;
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin: 10px 0;
-            color: #4caf50;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ff9800;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background: #151515;
+            background: #444;
             padding: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         nav a {
-            color: #e5e5e5;
+            color: #ffffff;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         nav a:hover {
-            color: #4caf50;
+            color: #ff9800;
         }
 
         .hero {
             text-align: center;
             padding: 100px 20px;
-            background: url('rootscoin-image.png') no-repeat center center;
-            background-size: cover;
-            color: #fff;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('rootscoin-image.png') center/cover no-repeat;
+            color: #ffffff;
         }
 
         .hero h2 {
             font-size: 3rem;
-            margin-bottom: 20px;
         }
 
         .hero p {
-            font-size: 1.5rem;
-            max-width: 700px;
-            margin: 0 auto;
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 20px auto;
         }
 
-        .cta-button {
+        .hero a {
             display: inline-block;
-            margin-top: 30px;
             padding: 15px 30px;
-            background: #4caf50;
-            color: #fff;
-            text-decoration: none;
+            background: #ff9800;
+            color: #ffffff;
             font-size: 1.2rem;
+            text-decoration: none;
             border-radius: 5px;
-            transition: background 0.3s;
+            margin-top: 20px;
         }
 
-        .cta-button:hover {
-            background: #43a047;
+        .hero a:hover {
+            background: #e68900;
         }
 
         .features {
             padding: 50px 20px;
-            background: #2a2a2a;
+            text-align: center;
+            background: #222;
         }
 
         .features h3 {
-            text-align: center;
             font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #4caf50;
+            color: #ff9800;
         }
 
-        .feature-grid {
+        .features .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            margin: 30px 0;
         }
 
         .feature {
-            background: #1e1e1e;
+            background: #333;
             padding: 20px;
             border-radius: 10px;
-            text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .feature h4 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #4caf50;
+            color: #ff9800;
+            font-size: 1.5rem;
         }
 
-        .feature p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+        .roadmap {
+            padding: 50px 20px;
+            text-align: center;
+            background: #333;
+        }
+
+        .roadmap h3 {
+            font-size: 2.5rem;
+            color: #ff9800;
+        }
+
+        .roadmap ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .roadmap li {
+            margin: 10px 0;
+            font-size: 1.2rem;
         }
 
         footer {
-            background: #151515;
-            text-align: center;
+            background: #222;
             padding: 20px;
-            color: #e5e5e5;
-            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
         }
 
         footer a {
-            color: #4caf50;
+            color: #ff9800;
             text-decoration: none;
         }
 
@@ -146,10 +155,11 @@
 </head>
 <body>
     <header>
-        <h1>RootsCoin</h1>
         <img src="rootscoin-image.png" alt="RootsCoin Logo">
-        <p>The MemeCoin Revolution Starts Here</p>
+        <h1>Welcome to RootsCoin</h1>
+        <p>The MemeCoin Revolution</p>
     </header>
+
     <nav>
         <a href="#about">About</a>
         <a href="#features">Features</a>
@@ -158,31 +168,41 @@
     </nav>
 
     <section class="hero">
-        <h2>Why RootsCoin?</h2>
-        <p>Unleash the power of a decentralized memecoin designed for the future. RootsCoin is here to grow your portfolio and plant the seeds of innovation.</p>
-        <a href="#buy" class="cta-button">Buy RootsCoin Now</a>
+        <h2>Why Choose RootsCoin?</h2>
+        <p>RootsCoin combines cutting-edge technology with the power of memes to create a unique investment opportunity. Join the revolution today!</p>
+        <a href="#buy">Get Started</a>
     </section>
 
     <section id="features" class="features">
-        <h3>Our Features</h3>
-        <div class="feature-grid">
+        <h3>Features</h3>
+        <div class="grid">
             <div class="feature">
-                <h4>Hyper-Deflationary</h4>
-                <p>Our tokenomics ensure that the supply decreases over time, increasing the value of your holdings.</p>
+                <h4>Decentralized</h4>
+                <p>Powered by blockchain technology, ensuring security and transparency.</p>
             </div>
             <div class="feature">
                 <h4>Community Driven</h4>
-                <p>RootsCoin is powered by a passionate community that drives innovation and adoption.</p>
+                <p>Our passionate community drives innovation and growth.</p>
             </div>
             <div class="feature">
                 <h4>Eco-Friendly</h4>
-                <p>Built on sustainable blockchain technology that minimizes environmental impact.</p>
+                <p>Built on a sustainable and energy-efficient platform.</p>
             </div>
         </div>
     </section>
 
+    <section id="roadmap" class="roadmap">
+        <h3>Roadmap</h3>
+        <ul>
+            <li>Q1 2024: Token Launch</li>
+            <li>Q2 2024: Exchange Listings</li>
+            <li>Q3 2024: Community Expansion</li>
+            <li>Q4 2024: Global Partnerships</li>
+        </ul>
+    </section>
+
     <footer>
-        <p>&copy; 2024 RootsCoin. Built for the future of finance. <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2024 RootsCoin. All rights reserved. <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
